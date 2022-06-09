@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS basic</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        ul {
+            list-style: none;
+            width: 150px;
+        }
+
+        ul li {
+            display: block;
+            background-color: green;
+            padding: 7px 2px;
+            color: white;
+            border-bottom: 1px dotted white;
+        }
+
+        ul li:hover {
+            background-color: lightgreen;
+            cursor: pointer;
+        }
+
+        #heading_12 {
+            color: red;
+        }
+
+        .heading {
+            color: darkorange;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .heading:hover {
+            background-color: aquamarine;
+        }
+
+        a,
+        h2 {
+            text-decoration: none;
+            font-size: medium;
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* h2{
+            text-decoration: none;
+            font-size: medium;
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+        } */
+
+        input[type="checkbox"]:checked {
+            transform: scale(2);
+        }
+
+        input[type="password"]:disabled {
+            background-color: gray;
+        }
+
+        input[type="text"]:focus {
+            width: 250px;
+            padding: 10px;
+        }
+
+        h1::before {
+            content: "+ ";
+        }
+
+        h1::after {
+            content: " ^";
+        }
+
+        .para::first-letter {
+            font-size: x-large;
+            font-weight: bolder;
+            color: tomato;
+        }
+
+        .para::first-line {
+            background-color: pink;
+        }
+
+        .para::selection {
+            background-color: orangered;
+            color: yellow;
+        }
+
+        ol {
+            list-style-image: url("https://www.w3schools.com/cssref/sqpurple.gif");
+        }
+
+        ol li::marker {
+            color: red;
+            font-size: larger;
+
+        }
+
+        button{
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 
+        có 3 cách để nhúng mã CSS vào trong mã HTML
+        1. Inline Style (thông qua thuộc tính style của element)
+        2. Internal Style (thông qua thẻ style đặt trong thẻ head)
+        3. External Style (tách mã css ra thành 1 file riêng, có phần mở rộng là .css. Nhúng vào mã HTML thông qua thẻ Link)
+     -->
+    <!-- 
+         bản chất của css chính là ghi đè (overriding) lên các thuộc tính mặc định
+      -->
+    <!-- 
+          Tổn tại 1 thứ tự ưu tiên trong css 
+          1. Inline Style > 2. Internal Style > 3. External Style > 4. Web browser style
+    -->
+    <ol id="ol">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <input type="checkbox"> Agree? <br>
+    <table>
+        <tr>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="password" disabled value="12235345">
+            </td>
+        </tr>
+    </table>
+    <a href="#">Go to home page</a> <br>
+    <h2>Go to home page</h2>
+    <button style="color: blue;">Submit</button>
+
+    <ul>
+        <li>Trang chủ</li>
+        <li>Khoa/Bộ môn</li>
+        <li>Phòng TCHC</li>
+        <li>Phòng Kế toán</li>
+    </ul>
+    <!-- <h1 style="color:orange;">Heading 1.1</h1> -->
+    <h1 class="heading">Heading 1.1</h1>
+    <h1 id="heading_12">Heading 1.2</h1>
+    <h1>Heading 1.3</h1>
+    <!-- <h1 style="color:orange;">Heading 1.4</h1> -->
+    <h1 class="heading">Heading 1.4</h1>
+    <p class="heading">Paragraph 1</p>
+    <p class="para">It is a long established fact that a reader will be distracted by the readable content of a page
+        when looking at its layout. </p>
+    <p class="para">At is a long established fact that a reader will be distracted by the readable content of a page
+        when looking at its layout. </p>
+    <p class="para">This is a long established fact that a reader will be distracted by the readable content of a page
+        when looking at its layout. </p>
+
+
+</body>
+
+</html>
