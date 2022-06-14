@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="https://www.google.com/search" method="get">
+        <table border="1">
+            <tr>
+                <td>
+                    <label for="avatar">Avatar</label>
+                </td>
+                <td>
+                    <input type="image" src="https://i.pinimg.com/75x75_RS/5a/8b/a9/5a8ba96abb2ac9f7ba6b2baf643d0a5f.jpg">
+                    <br>
+                    <input type="file" accept="image/*">
+                    <br>
+                    <input type="hidden" value="100">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Province</label>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">Hà Nội</option>
+                        <option value="">TP HCM</option>
+                        <option value="">Đà Nẵng</option>
+                        <option value="">TT Huế</option>
+                        <option value="">Quảng Trị</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Desciption</label>
+                </td>
+                <td>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="color">Color</label>
+                </td>
+                <td>
+                    <input type="color" >
+                    <br>
+                    <input type="range" min="0" max="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+                </td>
+                <td>
+                    <input type="radio" name="gender" checked> Male
+                    <input type="radio" name="gender"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="hobbies">Hobbies</label>
+                </td>
+                <td>
+                    <input type="checkbox" checked> Football
+                    <input type="checkbox"> Swiming
+                    <input type="checkbox"> Warlking
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="keyword">Keyword</label>
+                </td>
+                <td>
+                    <input type="text" id="keyword" name="query">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pid">Personal ID</label>
+                </td>
+                <td>
+                    <input type="number" id="pid" name="pid">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="search">Search</label>
+                </td>
+                <td>
+                    <input type="search" name="search" id="search">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="pin">Pin</label>
+                </td>
+                <td>
+                    <input type="password" id="pin" name="pin">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Email</label>
+                </td>
+                <td>
+                    <input type="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Phone number</label>
+                </td>
+                <td>
+                    <input type="tel" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Website</label>
+                </td>
+                <td>
+                    <input type="url" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Dob</label>
+                </td>
+                <td>
+                    <input type="date" name="dob"> 
+                    <input type="time">
+                    <br>
+                    <input type="datetime-local" name="dob">
+                    <br>
+                    <input type="week">
+                    <br>
+                    <input type="month">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- <button type="submit">Search</button>
+                    <button type="reset">Cancel</button>
+                    <button type="button" onclick="window.location.href = 'https://google.com'">Process</button> -->
+                    <input type="submit" value="Search">
+                    <input type="reset" value="Cancel">
+                    <input type="button" value="Process" onclick="window.location.href = 'https://google.com'">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
