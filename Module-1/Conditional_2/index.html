@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Tax</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="salary">Salary</label>
+                    </td>
+                    <td>
+                        <input autofocus class="form-control"type="number" id="salary" oninput="process()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="taxAmount">Tax Amount</label>
+                    </td>
+                    <td>
+                        <input class="form-control" type="text" id="taxAmount" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="net">NET</label>
+                    </td>
+                    <td>
+                        <input  class="form-control"type="text" id="net" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button class="btn" onclick="process()">Process</button>
+                        <button class="btn" onclick="cancel()">Cancel</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
