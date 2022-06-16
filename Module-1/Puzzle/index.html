@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <style>
+        img{
+            width: 800px;
+            height: 160px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td><img id="img_1" src="images/1_3.jpg" onclick="changeImage(1)" alt=""></td>
+            </tr>
+            <tr>
+                <td><img id="img_2" src="images/2_2.jpg" onclick="changeImage(2)" alt=""></td>
+            </tr>
+            <tr>
+                <td><img id="img_3" src="images/3_2.jpg" onclick="changeImage(3)" alt=""></td>
+            </tr>
+            <tr>
+                <td><img id="img_4" src="images/4_2.jpg" onclick="changeImage(4)" alt=""></td>
+            </tr>
+            <tr>
+                <td><img id="img_5" src="images/5_2.jpg" onclick="changeImage(5)" alt=""></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const win_1 = "http://127.0.0.1:5500/images/1_1.jpghttp://127.0.0.1:5500/images/2_1.jpghttp://127.0.0.1:5500/images/3_1.jpghttp://127.0.0.1:5500/images/4_1.jpghttp://127.0.0.1:5500/images/5_1.jpg";
+        const win_2 = "http://127.0.0.1:5500/images/1_2.jpghttp://127.0.0.1:5500/images/2_2.jpghttp://127.0.0.1:5500/images/3_2.jpghttp://127.0.0.1:5500/images/4_2.jpghttp://127.0.0.1:5500/images/5_2.jpg";
+        const min = 1;
+        const max = 2;
+
+        var img_1 = document.getElementById("img_1");
+        var img_2 = document.getElementById("img_2");
+        var img_3 = document.getElementById("img_3");
+        var img_4 = document.getElementById("img_4");
+        var img_5 = document.getElementById("img_5");
+
+        function changeImage(row){
+            let rndImage = Math.floor(Math.random()*(max - min + 1) + min);
+            document.getElementById(`img_${row}`).src = `images/${row}_${rndImage}.jpg`;
+            console.log(checkWin)
+            if(checkWin == win_1 || checkWin == win_2){
+                alert("completed");
+            }
+        }
+    </script>
+    <script src="puzzle.js"></script>
+</body>
+</html>
