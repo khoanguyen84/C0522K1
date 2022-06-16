@@ -4,46 +4,48 @@ const subtract = "-";
 const multiple = "x";
 const divide = ":";
 const equal = "=";
-var hasChoiseOperator = false;
+var hasChooseOperand = false;
 var statement = "";
 var result = document.getElementById("result");
 
 function enterNumber(number) {
-  hasChoiseOperator = false;
+  hasChooseOperand = false;
   result.value += number;
   statement += number;
 }
 function enterOperator(operator) {
-  if (hasChoiseOperator == false) {
+  if (hasChooseOperand == false) {
     switch (operator) {
       case clear: {
         result.value = "";
-        hasChoiseOperator = true;
+        statement = "";
+        hasChooseOperand = true;
         break;
       }
       case additional:
       case subtract: {
         result.value += operator;
         statement += operator;
-        hasChoiseOperator = true;
+        hasChooseOperand = true;
         break;
       }
       case multiple: {
         result.value += operator;
         statement += "*";
-        hasChoiseOperator = true;
+        hasChooseOperand = true;
         break;
       }
       case divide: {
         result.value += operator;
         statement += "/";
-        hasChoiseOperator = true;
+        hasChooseOperand = true;
         break;
       }
 
       case equal: {
         result.value = eval(statement);
-        hasChoiseOperator = false;
+        statement = "";
+        hasChooseOperand = false;
         break;
       }
     }
