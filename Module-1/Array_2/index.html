@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 2</title>
+</head>
+
+<body>
+    <script>
+        let matrix = [
+            [5, 55, 555, 5],
+            [1, 3, 5, 7, 88, 9, 10],
+            [7, 2, 5, 7, 14, 5]
+        ];
+        let result = "<table border='1'>";
+        result += "<tbody>";
+        for (let row = 0; row < matrix.length; row++) {
+            result += "<tr>";
+            for (let cell = 0; cell < matrix[row].length; cell++) {
+                result += `<td>${matrix[row][cell]}</td>`;
+            }
+            result += "</tr>"
+        }
+        result += "</tbody>"
+        result += "</table>";
+        document.write(result);
+    </script>
+</body>
+
+</html>
