@@ -41,3 +41,12 @@ for(let r = 0; r < row; r++){
 }
 
 console.log(matrix)
+
+// Viết chương trình tạo ra 1 mảng 2 chiều có số dòng là row, số ô trên mỗi dòng là cell
+// mảng 2 chiều này được tạo ra bằng cách sinh các số ngẫu nhiên trong khoảng [min, max]
+// các giá trị row, cell, min, max được người dùng nhập vào từ bàn phím
+// yêu cầu:
+// 1. Hiển thị mảng 2 chiều trên
+// 2. Đến xem trong mảng 2 chiều trên có bao nhiêu số chẵn
+// 3. Đếm xem trong mảng 2 chiều trên có bao nhiêu số nguyên tố
+// 4. Tính tổng các giá trị trên đường biên.
