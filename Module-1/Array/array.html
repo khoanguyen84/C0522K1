@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo array</title>
+</head>
+<body>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>Size</td>
+                <td>
+                    <input type="number" id="size" value="10">
+                </td>
+            </tr>
+            <tr>
+                <td>Min</td>
+                <td>
+                    <input type="number" id="min" value="10">
+                </td>
+            </tr>
+            <tr>
+                <td>Max</td>
+                <td>
+                    <input type="number" id="max" value="50">
+                </td>
+            </tr>
+            <tr>
+                <td>Mảng</td>
+                <td>
+                    <table border="1">
+                        <tbody>
+                            <tr id="trArray">
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Tổng các số lẻ</td>
+                <td id="totalOddNumber"></td>
+            </tr>
+            <tr>
+                <td>Số lượng số nguyên tố</td>
+                <td id="countOfPrime"></td>
+            </tr>
+            <tr>
+                <td>Số lượng chính phương</td>
+                <td id="countOfPerfectSquare"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="process()">Process</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="array.js"></script>
+</body>
+</html>
