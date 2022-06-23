@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [1, 4, 5, 6, 4, 3, 3, 6, 7, 4, 23, 3];
+        // let htmls = ['<button>1</button>', '<button>4</button>'];
+        let htmls = numbers.map(function(number, index){
+            return `<button onclick="alert(${number})">${number}</button>`
+        })
+        // console.log(htmls)
+        document.write(htmls.join(""));
+    </script>
+</body>
+</html>

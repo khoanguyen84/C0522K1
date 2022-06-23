@@ -33,11 +33,12 @@ let min = 10;
 let max = 20;
 let matrix = [];
 for(let r = 0; r < row; r++){
-    let numbers = [];
+    // let numbers = [];
+    matrix[c] = [];
     for(let c = 0; c < cell; c++){
-        numbers[c] = Math.floor(Math.random()*(max - min + 1) + min);
+        matrix[r][c] = Math.floor(Math.random()*(max - min + 1) + min);
     }
-    matrix[r] = numbers;
+    // matrix[r] = numbers;
 }
 
 console.log(matrix)
