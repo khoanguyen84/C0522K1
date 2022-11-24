@@ -1,9 +1,10 @@
 import React from "react";
+import UseStateCallback2 from './UseState/UseStateCallback2';
 
 function Content(){
     return (
         <div>
-            <h1>Content</h1>
+            <UseStateCallback2/>
         </div>
     )
 }
