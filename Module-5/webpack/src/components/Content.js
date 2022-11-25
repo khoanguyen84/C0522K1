@@ -1,10 +1,10 @@
 import React from "react";
-import UseStateCallback2 from './UseState/UseStateCallback2';
+import TodoList from './UseState/TodoList';
 
 function Content(){
     return (
         <div>
-            <UseStateCallback2/>
+            <TodoList/>
         </div>
     )
 }
