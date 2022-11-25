@@ -55,7 +55,7 @@ function TodoList() {
         newJobs.sort(function(job1, job2){
             return job2.id - job1.id;
         })
-        return newJobs[0].id;
+        return newJobs.length ? newJobs[0].id : 0;
     }
     return (
         <div className="container">
